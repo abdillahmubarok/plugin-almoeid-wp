@@ -1,0 +1,152 @@
+/**
+ * ALMOE ID OAuth Public CSS
+ * Custom styling for frontend login button and elements
+ */
+
+/* Login Button Container */
+.almoe-id-login-container {
+    margin: 24px 0;
+    text-align: center;
+    width: 100%;
+}
+
+/* Separator Line with Text */
+.almoe-id-login-separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+    color: #6c757d;
+    font-size: 14px;
+}
+
+.almoe-id-login-separator::before,
+.almoe-id-login-separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.almoe-id-login-separator span {
+    margin: 0 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Login Button Styling */
+.almoe-id-login-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 12px 16px;
+    border-radius: 4px;
+    background: linear-gradient(135deg, #0E5C67 0%, #0e6730 100%);
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.almoe-id-login-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.almoe-id-login-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Content */
+.almoe-id-icon {
+    display: inline-flex;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.almoe-id-icon svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.almoe-id-button-text {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+/* Pulse Animation on Hover */
+.almoe-id-login-button:hover::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.3);
+    opacity: 0;
+    border-radius: 100%;
+    transform: scale(1, 1) translate(-50%, -50%);
+    transform-origin: 50% 50%;
+    animation: almoe-id-pulse 2s infinite;
+}
+
+@keyframes almoe-id-pulse {
+    0% {
+        transform: scale(0.5, 0.5) translate(-50%, -50%);
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(10, 10) translate(-50%, -50%);
+        opacity: 0;
+    }
+}
+
+/* Responsive Adaptations */
+@media (max-width: 480px) {
+    .almoe-id-login-button {
+        max-width: 100%;
+        font-size: 14px;
+        padding: 10px 14px;
+    }
+    
+    .almoe-id-icon svg {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    .almoe-id-login-separator {
+        color: #adb5bd;
+    }
+    
+    .almoe-id-login-separator::before,
+    .almoe-id-login-separator::after {
+        border-bottom: 1px solid #495057;
+    }
+    
+    .almoe-id-login-button {
+        background: linear-gradient(135deg, #106d7a 0%, #0f7938 100%);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    }
+    
+    .almoe-id-login-button:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+}

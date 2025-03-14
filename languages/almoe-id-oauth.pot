@@ -1,0 +1,529 @@
+# Copyright (C) 2025 ALMOE ID
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: ALMOE ID OAuth 1.0.0\n"
+"Report-Msgid-Bugs-To: https://masjidalmubarokah.com/support\n"
+"POT-Creation-Date: 2025-03-13T12:00:00+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: WP-CLI 2.9.0\n"
+"X-Domain: almoe-id-oauth\n"
+
+#. Plugin Name of the plugin
+msgid "ALMOE ID OAuth"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://masjidalmubarokah.com/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Integrasi SSO dengan ALMOE ID - login dan registrasi melalui akun ALMOE ID."
+msgstr ""
+
+#. Author of the plugin
+msgid "ALMOE ID"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://masjidalmubarokah.com/"
+msgstr ""
+
+#: includes/class-auth.php:225
+msgid "Incomplete user data received from ALMOE ID server."
+msgstr ""
+
+#: includes/class-auth.php:269
+msgid "Auto-registration is disabled. Please contact the administrator."
+msgstr ""
+
+#: includes/class-core.php:147
+msgid "Invalid authentication attempt. Please try again."
+msgstr ""
+
+#: includes/class-core.php:147
+msgid "Authentication Error"
+msgstr ""
+
+#: includes/class-core.php:156
+msgid "Failed to authenticate with ALMOE ID. Please try again."
+msgstr ""
+
+#: includes/class-core.php:164
+msgid "Failed to retrieve user information. Please try again."
+msgstr ""
+
+#: includes/class-admin.php:54
+#: includes/class-admin.php:55
+msgid "ALMOE ID OAuth"
+msgstr ""
+
+#: includes/class-admin.php:64
+#: includes/class-admin.php:65
+msgid "Settings"
+msgstr ""
+
+#: includes/class-admin.php:74
+#: includes/class-admin.php:75
+msgid "User Mapping"
+msgstr ""
+
+#: includes/class-admin.php:84
+#: includes/class-admin.php:85
+msgid "Logs"
+msgstr ""
+
+#: includes/class-admin.php:142
+msgid "Login with ALMOE ID"
+msgstr ""
+
+#: includes/class-admin.php:165
+msgid "General Settings"
+msgstr ""
+
+#: includes/class-admin.php:173
+msgid "Connection Settings"
+msgstr ""
+
+#: includes/class-admin.php:181
+msgid "User Settings"
+msgstr ""
+
+#: includes/class-admin.php:189
+msgid "Appearance Settings"
+msgstr ""
+
+#: includes/class-admin.php:198
+msgid "Enable ALMOE ID Login"
+msgstr ""
+
+#: includes/class-admin.php:207
+msgid "Client ID"
+msgstr ""
+
+#: includes/class-admin.php:216
+msgid "Client Secret"
+msgstr ""
+
+#: includes/class-admin.php:225
+msgid "OAuth Endpoints"
+msgstr ""
+
+#: includes/class-admin.php:234
+msgid "Auto Register Users"
+msgstr ""
+
+#: includes/class-admin.php:243
+msgid "Default User Role"
+msgstr ""
+
+#: includes/class-admin.php:252
+msgid "Button Text"
+msgstr ""
+
+#: includes/class-admin.php:284
+msgid "Settings Saved"
+msgstr ""
+
+#: includes/class-admin.php:347
+msgid "Configure general settings for ALMOE ID OAuth integration."
+msgstr ""
+
+#: includes/class-admin.php:354
+msgid "Configure ALMOE ID OAuth server connection settings."
+msgstr ""
+
+#: includes/class-admin.php:357
+msgid "Test Connection"
+msgstr ""
+
+#: includes/class-admin.php:358
+msgid "Auto-Configure Endpoints"
+msgstr ""
+
+#: includes/class-admin.php:369
+msgid "Configure how users are created and managed."
+msgstr ""
+
+#: includes/class-admin.php:376
+msgid "Configure the appearance of the ALMOE ID login button."
+msgstr ""
+
+#: includes/class-admin.php:387
+msgid "Enable ALMOE ID OAuth authentication"
+msgstr ""
+
+#: includes/class-admin.php:390
+msgid "Enable or disable ALMOE ID authentication for this site."
+msgstr ""
+
+#: includes/class-admin.php:403
+msgid "Client ID provided by ALMOE ID server."
+msgstr ""
+
+#: includes/class-admin.php:416
+msgid "Client Secret provided by ALMOE ID server."
+msgstr ""
+
+#: includes/class-admin.php:430
+msgid "Authorization Endpoint"
+msgstr ""
+
+#: includes/class-admin.php:435
+msgid "Token Endpoint"
+msgstr ""
+
+#: includes/class-admin.php:440
+msgid "User Info Endpoint"
+msgstr ""
+
+#: includes/class-admin.php:445
+msgid "Discovery URL"
+msgstr ""
+
+#: includes/class-admin.php:450
+msgid "OAuth endpoints for ALMOE ID server. These can be auto-configured if the server supports discovery."
+msgstr ""
+
+#: includes/class-admin.php:463
+msgid "Automatically register new users"
+msgstr ""
+
+#: includes/class-admin.php:466
+msgid "If enabled, new users will be automatically registered when they authenticate with ALMOE ID."
+msgstr ""
+
+#: includes/class-admin.php:490
+msgid "Default role assigned to new users registered through ALMOE ID OAuth."
+msgstr ""
+
+#: includes/class-admin.php:503
+msgid "Text displayed on the ALMOE ID login button."
+msgstr ""
+
+#: includes/class-admin.php:506
+msgid "Button Preview"
+msgstr ""
+
+#: includes/class-admin.php:532
+msgid "Permission denied."
+msgstr ""
+
+#: includes/class-admin.php:542
+msgid "Client ID and Client Secret are required."
+msgstr ""
+
+#: includes/class-admin.php:550
+msgid "Connection successful! Your client credentials are valid."
+msgstr ""
+
+#: includes/class-admin.php:552
+msgid "Connection failed. Please check your client credentials and server settings."
+msgstr ""
+
+#: includes/class-admin.php:567
+msgid "Permission denied."
+msgstr ""
+
+#: includes/class-admin.php:580
+msgid "Endpoints successfully configured from discovery document."
+msgstr ""
+
+#: includes/class-admin.php:587
+msgid "Failed to auto-configure endpoints. Please check the discovery URL."
+msgstr ""
+
+#: public/partials/login-button.php:16
+msgid "OR"
+msgstr ""
+
+#: admin/partials/settings-page.php:33
+msgid "Version %s"
+msgstr ""
+
+#: admin/partials/settings-page.php:56
+msgid "Configuration Instructions"
+msgstr ""
+
+#: admin/partials/settings-page.php:58
+msgid "To set up ALMOE ID OAuth integration:"
+msgstr ""
+
+#: admin/partials/settings-page.php:60
+msgid "Register this site as a client in your ALMOE ID server"
+msgstr ""
+
+#: admin/partials/settings-page.php:61
+msgid "Set the redirect URI to:"
+msgstr ""
+
+#: admin/partials/settings-page.php:62
+msgid "Enter your Client ID and Client Secret in the settings"
+msgstr ""
+
+#: admin/partials/settings-page.php:63
+msgid "Configure the OAuth endpoints or use auto-discovery"
+msgstr ""
+
+#: admin/partials/settings-page.php:64
+msgid "Test the connection to ensure everything works"
+msgstr ""
+
+#: admin/partials/settings-page.php:70
+msgid "Need Help?"
+msgstr ""
+
+#: admin/partials/settings-page.php:72
+msgid "For questions, issues, or feature requests, please contact ALMOE ID support:"
+msgstr ""
+
+#: admin/partials/settings-page.php:74
+msgid "Support Website"
+msgstr ""
+
+#: admin/partials/settings-page.php:75
+msgid "Email Support"
+msgstr ""
+
+#: admin/partials/user-mapping-page.php:33
+msgid "User Statistics"
+msgstr ""
+
+#: admin/partials/user-mapping-page.php:36
+msgid "Total WordPress Users"
+msgstr ""
+
+#: admin/partials/user-mapping-page.php:40
+msgid "Users Linked to ALMOE ID"
+msgstr ""
+
+#: admin/partials/user-mapping-page.php:44
+msgid "Users Using ALMOE ID"
+msgstr ""
+
+#: admin/partials/user-mapping-page.php:52
+msgid "Search Users:"
+msgstr ""
+
+#: admin/partials/user-mapping-page.php:53
+msgid "Search by name or email..."
+msgstr ""
+
+#: admin/partials/user-mapping-page.php:60
+msgid "ID"
+msgstr ""
+
+#: admin/partials/user-mapping-page.php:61
+msgid "Name"
+msgstr ""
+
+#: admin/partials/user-mapping-page.php:62
+msgid "Email"
+msgstr ""
+
+#: admin/partials/user-mapping-page.php:63
+msgid "ALMOE ID Status"
+msgstr ""
+
+#: admin/partials/user-mapping-page.php:64
+msgid "Last Login"
+msgstr ""
+
+#: admin/partials/user-mapping-page.php:65
+msgid "Actions"
+msgstr ""
+
+#: admin/partials/user-mapping-page.php:70
+msgid "No users are currently linked with ALMOE ID."
+msgstr ""
+
+#: admin/partials/user-mapping-page.php:91
+msgid "Linked"
+msgstr ""
+
+#: admin/partials/user-mapping-page.php:91
+msgid "Not linked"
+msgstr ""
+
+#: admin/partials/user-mapping-page.php:97
+msgid "%s ago"
+msgstr ""
+
+#: admin/partials/user-mapping-page.php:99
+msgid "Never"
+msgstr ""
+
+#: admin/partials/user-mapping-page.php:106
+msgid "Unlink"
+msgstr ""
+
+#: admin/partials/user-mapping-page.php:118
+msgid "About User Mapping"
+msgstr ""
+
+#: admin/partials/user-mapping-page.php:120
+msgid "This page shows WordPress users who have linked their accounts with ALMOE ID."
+msgstr ""
+
+#: admin/partials/user-mapping-page.php:121
+msgid "Users can be linked to ALMOE ID in two ways:"
+msgstr ""
+
+#: admin/partials/user-mapping-page.php:123
+msgid "Existing WordPress users can log in with ALMOE ID"
+msgstr ""
+
+#: admin/partials/user-mapping-page.php:124
+msgid "New users can register through ALMOE ID authentication"
+msgstr ""
+
+#: admin/partials/user-mapping-page.php:131
+msgid "Actions"
+msgstr ""
+
+#: admin/partials/user-mapping-page.php:133
+msgid "You can perform the following actions:"
+msgstr ""
+
+#: admin/partials/user-mapping-page.php:135
+msgid "Unlink: Disconnects a user from their ALMOE ID account. They can still log in with their WordPress credentials."
+msgstr ""
+
+#: admin/partials/user-mapping-page.php:137
+msgid "Note:"
+msgstr ""
+
+#: admin/partials/user-mapping-page.php:137
+msgid "Unlinking a user does not delete their WordPress account or ALMOE ID account."
+msgstr ""
+
+#: admin/partials/logs-page.php:168
+msgid "User ID:"
+msgstr ""
+
+#: admin/partials/logs-page.php:173
+msgid "Event Type:"
+msgstr ""
+
+#: admin/partials/logs-page.php:175
+msgid "All Events"
+msgstr ""
+
+#: admin/partials/logs-page.php:176
+msgid "Login Success"
+msgstr ""
+
+#: admin/partials/logs-page.php:177
+msgid "Login Failure"
+msgstr ""
+
+#: admin/partials/logs-page.php:183
+msgid "Date Range:"
+msgstr ""
+
+#: admin/partials/logs-page.php:185
+msgid "Select dates..."
+msgstr ""
+
+#: admin/partials/logs-page.php:194
+msgid "Filter"
+msgstr ""
+
+#: admin/partials/logs-page.php:195
+msgid "Reset"
+msgstr ""
+
+#: admin/partials/logs-page.php:204
+msgid "No logs found matching your criteria."
+msgstr ""
+
+#: admin/partials/logs-page.php:209
+msgid "Showing %1$d of %2$d log entry"
+msgid_plural "Showing %1$d of %2$d log entries"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/partials/logs-page.php:217
+msgid "ID"
+msgstr ""
+
+#: admin/partials/logs-page.php:218
+msgid "Time"
+msgstr ""
+
+#: admin/partials/logs-page.php:219
+msgid "User"
+msgstr ""
+
+#: admin/partials/logs-page.php:220
+msgid "Event"
+msgstr ""
+
+#: admin/partials/logs-page.php:221
+msgid "Details"
+msgstr ""
+
+#: admin/partials/logs-page.php:222
+msgid "IP Address"
+msgstr ""
+
+#: admin/partials/logs-page.php:240
+msgid "User ID: %d (deleted)"
+msgstr ""
+
+#: admin/partials/logs-page.php:242
+msgid "No user"
+msgstr ""
+
+#: admin/partials/logs-page.php:252
+msgid "ALMOE ID: %s, Email: %s"
+msgstr ""
+
+#: admin/partials/logs-page.php:257
+msgid "Error: %s"
+msgstr ""
+
+#: admin/partials/logs-page.php:276
+msgid "%s ago"
+msgstr ""
+
+#: admin/partials/logs-page.php:285
+msgid "Login Success"
+msgstr ""
+
+#: admin/partials/logs-page.php:287
+msgid "Login Failure"
+msgstr ""
+
+#: admin/partials/logs-page.php:316
+msgid "About Logs"
+msgstr ""
+
+#: admin/partials/logs-page.php:318
+msgid "This page shows login activity logs for ALMOE ID authentication."
+msgstr ""
+
+#: admin/partials/logs-page.php:319
+msgid "You can filter logs by user, event type, and date range."
+msgstr ""
+
+#: admin/partials/logs-page.php:320
+msgid "Logs are automatically cleaned after 30 days to keep the database optimized."
+msgstr ""
+
+#: admin/partials/logs-page.php:325
+msgid "Log Legend"
+msgstr ""
+
+#: admin/partials/logs-page.php:327
+msgid "Login Success: User successfully authenticated with ALMOE ID"
+msgstr ""
+
+#: admin/partials/logs-page.php:328
+msgid "Login Failure: Authentication attempt failed"
+msgstr ""

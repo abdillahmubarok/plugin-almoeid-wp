@@ -1,0 +1,394 @@
+/**
+ * ALMOE ID OAuth Admin CSS
+ * Custom styling for admin settings pages
+ */
+
+/* Main Admin Container */
+.almoe-id-oauth-settings {
+    max-width: 1200px;
+}
+
+/* Admin Header with Logo */
+.almoe-id-oauth-admin-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    background: linear-gradient(135deg, #0E5C67 0%, #0e6730 100%);
+    border-radius: 5px;
+    color: white;
+}
+
+.almoe-id-oauth-logo {
+    display: flex;
+    align-items: center;
+}
+
+.almoe-id-oauth-logo img {
+    height: 40px;
+    margin-right: 15px;
+}
+
+.almoe-id-oauth-version {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Admin Content Layout */
+.almoe-id-oauth-admin-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.almoe-id-oauth-admin-main {
+    flex: 1 1 65%;
+    min-width: 500px;
+}
+
+.almoe-id-oauth-admin-sidebar {
+    flex: 1 1 25%;
+    min-width: 250px;
+}
+
+/* Settings Form Styles */
+.almoe-id-oauth-settings .form-table th {
+    width: 200px;
+    padding: 20px 10px 20px 0;
+    vertical-align: top;
+}
+
+.almoe-id-oauth-settings .form-table td {
+    padding: 15px 10px;
+}
+
+.almoe-id-oauth-settings .form-table {
+    margin-top: 15px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.almoe-id-oauth-settings input[type="text"],
+.almoe-id-oauth-settings input[type="url"],
+.almoe-id-oauth-settings input[type="password"],
+.almoe-id-oauth-settings select {
+    min-width: 350px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.almoe-id-oauth-settings input[type="checkbox"] {
+    border-radius: 3px;
+}
+
+.almoe-id-oauth-settings input:focus,
+.almoe-id-oauth-settings select:focus {
+    border-color: #0E5C67;
+    box-shadow: 0 0 0 1px #0E5C67;
+}
+
+/* Section Headers */
+.almoe-id-oauth-settings h2 {
+    padding: 15px 20px;
+    margin: 30px 0 0 0;
+    background: #f8f9fa;
+    border-left: 4px solid #0E5C67;
+    border-radius: 0 5px 5px 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.almoe-id-oauth-settings .form-table + h2 {
+    margin-top: 40px;
+}
+
+/* Description Text */
+.almoe-id-oauth-settings .description {
+    color: #6c757d;
+    font-style: italic;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Endpoint Field Styling */
+.almoe-id-oauth-endpoint-field {
+    margin-bottom: 15px;
+}
+
+.almoe-id-oauth-endpoint-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+/* Connection Tools */
+.almoe-id-oauth-connection-tools {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.almoe-id-oauth-connection-tools button {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.almoe-id-oauth-connection-tools button:hover {
+    background: #f8f9fa;
+    border-color: #c6c8ca;
+}
+
+#almoe-id-oauth-test-connection {
+    color: #0E5C67;
+    border-color: #0E5C67;
+}
+
+#almoe-id-oauth-test-connection:hover {
+    background: #e6f7fa;
+}
+
+#almoe-id-oauth-auto-configure {
+    color: #0e6730;
+    border-color: #0e6730;
+}
+
+#almoe-id-oauth-auto-configure:hover {
+    background: #e6f9e6;
+}
+
+#almoe-id-oauth-connection-status {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+#almoe-id-oauth-connection-status.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+#almoe-id-oauth-connection-status.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Sidebar Boxes */
+.almoe-id-oauth-box {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.almoe-id-oauth-box h3 {
+    margin: 0;
+    padding: 15px 20px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    font-size: 14px;
+    color: #212529;
+}
+
+.almoe-id-oauth-box-content {
+    padding: 15px 20px;
+}
+
+.almoe-id-oauth-box-content p:first-child {
+    margin-top: 0;
+}
+
+.almoe-id-oauth-box-content p:last-child,
+.almoe-id-oauth-box-content ul:last-child,
+.almoe-id-oauth-box-content ol:last-child {
+    margin-bottom: 0;
+}
+
+.almoe-id-oauth-box-content code {
+    background: #f8f9fa;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    border: 1px solid #dee2e6;
+}
+
+/* Button Preview */
+.almoe-id-oauth-button-preview {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 5px;
+    border: 1px solid #dee2e6;
+}
+
+.almoe-id-oauth-button-preview h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #495057;
+}
+
+#almoe-id-oauth-button-preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 12px 16px;
+    border-radius: 4px;
+    background: linear-gradient(135deg, #0E5C67 0%, #0e6730 100%);
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/* User Mapping Table */
+.almoe-id-oauth-user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.almoe-id-oauth-user-table th,
+.almoe-id-oauth-user-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.almoe-id-oauth-user-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #495057;
+}
+
+.almoe-id-oauth-user-table tr:last-child td {
+    border-bottom: none;
+}
+
+.almoe-id-oauth-user-table tr:hover td {
+    background-color: #f8f9fa;
+}
+
+/* Logs Table */
+.almoe-id-oauth-logs-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.almoe-id-oauth-logs-filter .filter-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.almoe-id-oauth-logs-filter label {
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.almoe-id-oauth-logs-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.almoe-id-oauth-logs-table th,
+.almoe-id-oauth-logs-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.almoe-id-oauth-logs-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #495057;
+}
+
+.almoe-id-oauth-logs-table .event-success {
+    color: #28a745;
+}
+
+.almoe-id-oauth-logs-table .event-failure {
+    color: #dc3545;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 782px) {
+    .almoe-id-oauth-admin-main,
+    .almoe-id-oauth-admin-sidebar {
+        flex: 1 1 100%;
+        min-width: 100%;
+    }
+    
+    .almoe-id-oauth-settings input[type="text"],
+    .almoe-id-oauth-settings input[type="url"],
+    .almoe-id-oauth-settings input[type="password"],
+    .almoe-id-oauth-settings select {
+        min-width: 100%;
+    }
+    
+    .almoe-id-oauth-settings .form-table, 
+    .almoe-id-oauth-settings .form-table tbody, 
+    .almoe-id-oauth-settings .form-table tr, 
+    .almoe-id-oauth-settings .form-table th, 
+    .almoe-id-oauth-settings .form-table td {
+        display: block;
+        width: 100%;
+    }
+    
+    .almoe-id-oauth-settings .form-table th {
+        padding-bottom: 0;
+    }
+    
+    .almoe-id-oauth-logs-table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    /* Read-only Fields Styling */
+.almoe-id-readonly {
+    background-color: #f5f5f5;
+    color: #666;
+    cursor: not-allowed;
+    opacity: 0.8;
+    border: 1px solid #ddd !important;
+    box-shadow: none !important;
+}
+
+.almoe-id-readonly:focus {
+    border-color: #ddd !important;
+    box-shadow: none !important;
+}
+}
