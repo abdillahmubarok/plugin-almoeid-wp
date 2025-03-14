@@ -1,3 +1,6 @@
+GitHub menggunakan sintaks Markdown khusus yang kadang perlu penyesuaian agar tampil dengan benar. Saya akan memperbarui format README.md Anda agar terlihat lebih baik di GitHub:
+
+```markdown
 # ALMOE ID OAuth
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
@@ -7,11 +10,11 @@
 
 Integrates WordPress with ALMOE ID OAuth server for secure Single Sign-On (SSO) authentication.
 
-## 📖 Description
+## Description
 
 ALMOE ID OAuth allows your WordPress site to connect seamlessly with ALMOE ID authentication system, enabling Single Sign-On (SSO) functionality for your users. With this plugin, users can log in to your WordPress site using their ALMOE ID accounts, streamlining the login process and improving security.
 
-### ✨ Key Features
+## Key Features
 
 - **Single Sign-On (SSO)**: Allow users to log in with their ALMOE ID credentials
 - **Secure Authentication**: Uses OAuth 2.0 with PKCE for enhanced security
@@ -22,14 +25,14 @@ ALMOE ID OAuth allows your WordPress site to connect seamlessly with ALMOE ID au
 - **Modern Design**: Attractive and responsive login button with customization options
 - **Shortcode Support**: Add login buttons anywhere on your site with the `[almoe_login_button]` shortcode
 
-### 🌟 Benefits
+## Benefits
 
 - **Improved User Experience**: Streamline the login process with a single set of credentials
 - **Enhanced Security**: Leverage ALMOE ID's security features for your WordPress site
 - **Reduced Administration**: Centralize user management through ALMOE ID
 - **Detailed Insights**: Track user authentication through comprehensive logs
 
-## 🔧 Installation
+## Installation
 
 1. Clone this repository or download the ZIP file
 2. Upload the `almoe-id-oauth` folder to the `/wp-content/plugins/` directory of your WordPress installation
@@ -41,7 +44,7 @@ ALMOE ID OAuth allows your WordPress site to connect seamlessly with ALMOE ID au
 6. Enter your Client ID and Client Secret in the plugin settings
 7. Configure additional settings as needed and test the connection
 
-## 🔌 Shortcode Usage
+## Shortcode Usage
 
 ### Basic Usage
 Add this shortcode anywhere (pages, posts, sidebar widgets):
@@ -74,54 +77,37 @@ Add this code to your theme template files:
 <?php echo do_shortcode('[almoe_login_button]'); ?>
 ```
 
-## ❓ Frequently Asked Questions
+## Frequently Asked Questions
 
-<details>
-<summary><strong>What is ALMOE ID?</strong></summary>
-<br>
+### What is ALMOE ID?
 ALMOE ID is a secure authentication service that provides Single Sign-On (SSO) capabilities for your ecosystem of applications. It allows users to access multiple services with one set of credentials.
-</details>
 
-<details>
-<summary><strong>How does the plugin handle new users?</strong></summary>
-<br>
+### How does the plugin handle new users?
 When new users authenticate with ALMOE ID, they can be automatically registered in WordPress based on your configuration settings. You can control this behavior and set the default role for new users in the plugin settings.
-</details>
 
-<details>
-<summary><strong>Can existing WordPress users connect their accounts to ALMOE ID?</strong></summary>
-<br>
+### Can existing WordPress users connect their accounts to ALMOE ID?
 Yes, existing WordPress users can link their accounts with ALMOE ID by logging in with their ALMOE ID credentials. The plugin will automatically match accounts based on email address.
-</details>
 
-<details>
-<summary><strong>Is this plugin compatible with multisite installations?</strong></summary>
-<br>
+### Is this plugin compatible with multisite installations?
 Yes, the plugin works with WordPress multisite installations. Each site in the network can have its own configuration.
-</details>
 
-<details>
-<summary><strong>What happens if ALMOE ID is unavailable?</strong></summary>
-<br>
+### What happens if ALMOE ID is unavailable?
 Users will still be able to log in using the standard WordPress login form, ensuring your site remains accessible even if the ALMOE ID server is temporarily unavailable.
-</details>
 
-<details>
-<summary><strong>How does the plugin handle security?</strong></summary>
-<br>
+### How does the plugin handle security?
 The plugin uses OAuth 2.0 with PKCE (Proof Key for Code Exchange) for enhanced security, preventing authorization code interception attacks. It also implements strict validation of tokens and state parameters to prevent CSRF attacks.
-</details>
 
-## 📜 Changelog
+## Changelog
 
 ### 1.0.0
 - Initial release
 
-## 🔗 Links
+## Links
 
 - [ALMOE ID Website](https://masjidalmubarokah.com/)
 - [Support](https://masjidalmubarokah.com/support/)
 
-## 📝 License
+## License
 
 This project is licensed under the GPL v2 or later - see the [LICENSE](LICENSE) file for details.
+```
