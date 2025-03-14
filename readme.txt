@@ -1,6 +1,4 @@
-GitHub menggunakan sintaks Markdown khusus yang kadang perlu penyesuaian agar tampil dengan benar. Saya akan memperbarui format README.md Anda agar terlihat lebih baik di GitHub:
 
-```markdown
 # ALMOE ID OAuth
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
@@ -110,4 +108,3 @@ The plugin uses OAuth 2.0 with PKCE (Proof Key for Code Exchange) for enhanced s
 ## License
 
 This project is licensed under the GPL v2 or later - see the [LICENSE](LICENSE) file for details.
-```
