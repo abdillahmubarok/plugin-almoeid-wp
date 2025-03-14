@@ -2,7 +2,7 @@
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
 ![WordPress](https://img.shields.io/badge/WordPress-5.8%2B-green)
-![PHP](https://img.shields.io/badge/PHP-7.4%2B-purple)
+![PHP](https://img.shields.io/badge/PHP-8.2%2B-purple)
 [![License](https://img.shields.io/badge/License-GPL%20v2-orange)](https://www.gnu.org/licenses/gpl-2.0.html)
 
 Integrates WordPress with ALMOE ID OAuth server for secure Single Sign-On (SSO) authentication.
