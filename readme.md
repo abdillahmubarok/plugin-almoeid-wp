@@ -1,7 +1,7 @@
 # ALMOE ID OAuth
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
-![WordPress](https://img.shields.io/badge/WordPress-5.8%2B-green)
+![WordPress](https://img.shields.io/badge/WordPress-6.4%2B-green)
 ![PHP](https://img.shields.io/badge/PHP-8.2%2B-purple)
 [![License](https://img.shields.io/badge/License-GPL%20v2-orange)](https://www.gnu.org/licenses/gpl-2.0.html)
 
