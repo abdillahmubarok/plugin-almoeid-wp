@@ -1,150 +1,127 @@
-=== ALMOE ID OAuth ===
-Contributors: almoeid
-Tags: oauth, sso, login, authentication, almoe-id
-Requires at least: 5.8
-Tested up to: 6.4
-Stable tag: 1.0.0
-Requires PHP: 7.4
-License: GPL v2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+# ALMOE ID OAuth
+
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![WordPress](https://img.shields.io/badge/WordPress-5.8%2B-green)
+![PHP](https://img.shields.io/badge/PHP-7.4%2B-purple)
+[![License](https://img.shields.io/badge/License-GPL%20v2-orange)](https://www.gnu.org/licenses/gpl-2.0.html)
 
 Integrates WordPress with ALMOE ID OAuth server for secure Single Sign-On (SSO) authentication.
 
-== Description ==
+## 📖 Description
 
 ALMOE ID OAuth allows your WordPress site to connect seamlessly with ALMOE ID authentication system, enabling Single Sign-On (SSO) functionality for your users. With this plugin, users can log in to your WordPress site using their ALMOE ID accounts, streamlining the login process and improving security.
 
-### Key Features
+### ✨ Key Features
 
-* **Single Sign-On (SSO)**: Allow users to log in with their ALMOE ID credentials
-* **Secure Authentication**: Uses OAuth 2.0 with PKCE for enhanced security
-* **Automatic Registration**: New users can be automatically registered in WordPress when they authenticate with ALMOE ID
-* **User Mapping**: Existing WordPress users can link their accounts with ALMOE ID
-* **Detailed Logging**: Track authentication events and monitor login activity
-* **Customizable Integration**: Configure OAuth endpoints, button appearance, and user registration settings
-* **Modern Design**: Attractive and responsive login button with customization options
+- **Single Sign-On (SSO)**: Allow users to log in with their ALMOE ID credentials
+- **Secure Authentication**: Uses OAuth 2.0 with PKCE for enhanced security
+- **Automatic Registration**: New users can be automatically registered in WordPress when they authenticate with ALMOE ID
+- **User Mapping**: Existing WordPress users can link their accounts with ALMOE ID
+- **Detailed Logging**: Track authentication events and monitor login activity
+- **Customizable Integration**: Configure OAuth endpoints, button appearance, and user registration settings
+- **Modern Design**: Attractive and responsive login button with customization options
+- **Shortcode Support**: Add login buttons anywhere on your site with the `[almoe_login_button]` shortcode
 
-* **Single Sign-On (SSO)**: Allow users to log in with their ALMOE ID credentials
-* **Secure Authentication**: Uses OAuth 2.0 with PKCE for enhanced security
-* **Automatic Registration**: New users can be automatically registered in WordPress when they authenticate with ALMOE ID
-* **User Mapping**: Existing WordPress users can link their accounts with ALMOE ID
-* **Detailed Logging**: Track authentication events and monitor login activity
-* **Customizable Integration**: Configure OAuth endpoints, button appearance, and user registration settings
-* **Modern Design**: Attractive and responsive login button with customization options
-* **Shortcode Support**: Add login buttons anywhere on your site with the `[almoe_login_button]` shortcode
+### 🌟 Benefits
 
+- **Improved User Experience**: Streamline the login process with a single set of credentials
+- **Enhanced Security**: Leverage ALMOE ID's security features for your WordPress site
+- **Reduced Administration**: Centralize user management through ALMOE ID
+- **Detailed Insights**: Track user authentication through comprehensive logs
 
-### Benefits
+## 🔧 Installation
 
-* **Improved User Experience**: Streamline the login process with a single set of credentials
-* **Enhanced Security**: Leverage ALMOE ID's security features for your WordPress site
-* **Reduced Administration**: Centralize user management through ALMOE ID
-* **Detailed Insights**: Track user authentication through comprehensive logs
+1. Clone this repository or download the ZIP file
+2. Upload the `almoe-id-oauth` folder to the `/wp-content/plugins/` directory of your WordPress installation
+3. Activate the plugin through the 'Plugins' screen in WordPress
+4. Navigate to the 'ALMOE ID OAuth' menu in your admin dashboard to configure the plugin
+5. Register your WordPress site as an OAuth client in your ALMOE ID server:
+   - Set redirect URI to: `https://your-site.com/almoe-id-callback`
+   - Request necessary scopes: `view-user`
+6. Enter your Client ID and Client Secret in the plugin settings
+7. Configure additional settings as needed and test the connection
 
-== Installation ==
+## 🔌 Shortcode Usage
 
-1. Upload the `almoe-id-oauth` folder to the `/wp-content/plugins/` directory, or install the plugin through the WordPress plugins screen directly.
-2. Activate the plugin through the 'Plugins' screen in WordPress.
-3. Navigate to the 'ALMOE ID OAuth' menu in your admin dashboard to configure the plugin.
-4. Register your WordPress site as an OAuth client in your ALMOE ID server:
-   * Set redirect URI to: `https://your-site.com/almoe-id-callback`
-   * Request necessary scopes: `view-user`
-5. Enter your Client ID and Client Secret in the plugin settings.
-6. Configure additional settings as needed and test the connection.
-
-
-## Cara Menggunakan Shortcode Login Button ALMOE ID
-
-### Penggunaan Dasar
-Cukup tambahkan kode berikut di mana saja (halaman, post, sidebar widget):
+### Basic Usage
+Add this shortcode anywhere (pages, posts, sidebar widgets):
 
 ```
 [almoe_login_button]
 ```
 
-### Contoh dengan Parameter Lengkap:
+### Example with All Parameters
 
 ```
-[almoe_login_button text="Masuk dengan ALMOE ID" size="large" fullwidth="yes" redirect="https://situsanda.com/dashboard" class="my-custom-button"]
+[almoe_login_button text="Login with ALMOE ID" size="large" fullwidth="yes" redirect="https://yoursite.com/dashboard" class="my-custom-button"]
 ```
 
-### Pengaturan Parameter:
+### Available Parameters
 
-1. `text` - Teks yang akan ditampilkan pada tombol
-2. `size` - Ukuran tombol (`small`, `normal`, atau `large`)
-3. `fullwidth` - Apakah tombol akan penuh lebar (`yes` atau `no`)
-4. `redirect` - URL tujuan setelah berhasil login
-5. `class` - Kelas CSS tambahan untuk styling kustom
+| Parameter | Description | Default | Options |
+|-----------|-------------|---------|---------|
+| `text` | Button text | "Login with ALMOE ID" | Any text |
+| `size` | Button size | "normal" | "small", "normal", "large" |
+| `fullwidth` | Full width button | "no" | "yes", "no" |
+| `redirect` | Redirect URL after login | Current page | Any valid URL |
+| `class` | Additional CSS classes | - | Any valid class name |
 
-### Memasang di Sidebar Widget:
+### Adding to Theme Templates
 
-1. Buka dashboard WordPress > Appearance > Widgets
-2. Tambahkan widget "Text" atau "Custom HTML" ke sidebar
-3. Masukkan shortcode `[almoe_login_button]` di widget tersebut
-4. Simpan widget
-
-### Memasang di Theme Template:
-
-Tambahkan kode berikut di file template yang sesuai:
+Add this code to your theme template files:
 
 ```php
 <?php echo do_shortcode('[almoe_login_button]'); ?>
 ```
 
-### Contoh Preview Hasil:
+## ❓ Frequently Asked Questions
 
-- Button Normal: Tombol login standar
-- Button Small: Tombol login ukuran kecil, cocok untuk sidebar
-- Button Large: Tombol login ukuran besar, cocok untuk Call to Action
-- Button Full Width: Tombol yang memenuhi lebar container, cocok untuk mobile
-
-
-== Frequently Asked Questions ==
-
-= What is ALMOE ID? =
-
+<details>
+<summary><strong>What is ALMOE ID?</strong></summary>
+<br>
 ALMOE ID is a secure authentication service that provides Single Sign-On (SSO) capabilities for your ecosystem of applications. It allows users to access multiple services with one set of credentials.
+</details>
 
-= How does the plugin handle new users? =
-
+<details>
+<summary><strong>How does the plugin handle new users?</strong></summary>
+<br>
 When new users authenticate with ALMOE ID, they can be automatically registered in WordPress based on your configuration settings. You can control this behavior and set the default role for new users in the plugin settings.
+</details>
 
-= Can existing WordPress users connect their accounts to ALMOE ID? =
-
+<details>
+<summary><strong>Can existing WordPress users connect their accounts to ALMOE ID?</strong></summary>
+<br>
 Yes, existing WordPress users can link their accounts with ALMOE ID by logging in with their ALMOE ID credentials. The plugin will automatically match accounts based on email address.
+</details>
 
-= Is this plugin compatible with multisite installations? =
-
+<details>
+<summary><strong>Is this plugin compatible with multisite installations?</strong></summary>
+<br>
 Yes, the plugin works with WordPress multisite installations. Each site in the network can have its own configuration.
+</details>
 
-= What happens if ALMOE ID is unavailable? =
-
+<details>
+<summary><strong>What happens if ALMOE ID is unavailable?</strong></summary>
+<br>
 Users will still be able to log in using the standard WordPress login form, ensuring your site remains accessible even if the ALMOE ID server is temporarily unavailable.
+</details>
 
-= How does the plugin handle security? =
-
+<details>
+<summary><strong>How does the plugin handle security?</strong></summary>
+<br>
 The plugin uses OAuth 2.0 with PKCE (Proof Key for Code Exchange) for enhanced security, preventing authorization code interception attacks. It also implements strict validation of tokens and state parameters to prevent CSRF attacks.
+</details>
 
+## 📜 Changelog
 
-== Screenshots ==
+### 1.0.0
+- Initial release
 
-1. ALMOE ID OAuth login button on WordPress login form
-2. Plugin settings page
-3. User mapping interface
-4. Authentication logs dashboard
+## 🔗 Links
 
-== Changelog ==
+- [ALMOE ID Website](https://masjidalmubarokah.com/)
+- [Support](https://masjidalmubarokah.com/support/)
 
-= 1.0.0 =
-* Initial release
+## 📝 License
 
-== Upgrade Notice ==
-
-= 1.0.0 =
-Initial release of ALMOE ID OAuth plugin.
-
-== Additional Information ==
-
-For more information about integrating with ALMOE ID, please visit [the ALMOE ID website](https://masjidalmubarokah.com/).
-
-If you need help or have any questions, please contact [ALMOE ID Support](https://masjidalmubarokah.com/support/).
+This project is licensed under the GPL v2 or later - see the [LICENSE](LICENSE) file for details.
